@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Título (3) (1).png" type="image/png"> <!--"favicon" icine da aba do navegador-->
     <title>Vip Transporte Escolar</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,21 +12,21 @@
 
 <body>
     <!--inicio do header_menu-->
-    <div class="header_menu">
+    <div class="header_menu" id="inicio">
         <header class="container">
             <!-- <a href="index.html" class="logo"><span class="span_logo">vip</span> transporte escolar</a> -->
             <div class="menu_logo">
                 <a href=""><img class="logo" src="assets/img/Título (3) (1).png" alt="logo vip transporte"></a>
                 <!-- <a href=""><img class="logo" src="assets/img/Sem nome (Website) (6) (1).png" alt="logo vip transporte"></a> -->
             </div>
-            <!-- <nav class="nav_menu">
+            <nav class="nav_menu">
                 <ul>
-                    <li class="li_menu"><a class="link_mnu" href="#index.html">Início</a></li>
+                    <li class="li_menu"><a class="link_mnu" href="#inicio">Início</a></li>
                     <li class="li_menu"><a class="link_mnu" href="#empresa">Empresa</a></li>
-                    <li class="li_menu"><a class="link_mnu" href="#calegios">Colégios e Bairros</a></li>
-                    <li class="li_menu"><a class="link_mnu" href="#contato.html">Contato</a></li>
+                    <li class="li_menu"><a class="link_mnu" href="#colegios">Colégios e Bairros</a></li>
+                    <li class="li_menu"><a class="link_mnu" href="#contato">Contato</a></li>
                 </ul>
-            </nav> -->
+            </nav>
         </header>
     </div>
     <!--fim do header_menu-->
@@ -67,13 +68,14 @@
     </div>
     <!--fim do qualidades-->
     <!--inicio empresa-->
-    <!-- <div class="empresa_fundo">
-        <div class="div_empresa container_empresa" id="escola">
+    <div class="empresa_fundo">
+        <div class="div_empresa" id="empresa">
             <section class="container_empresa">
                 <img class="imagem_empresa" src="assets/img/ANDERSON11.jpg" alt="vans escolares">
                 <div class="empresa_content">
                     <h2 class="empresa_title">Nossa empresa</h2>
-                    <p>Transporte escolar é a especialidade da Vip Transporte Escolar ltda. Há mais de 27 anos no
+                    <p class="empresa_p">Transporte escolar é a especialidade da Vip Transporte Escolar ltda. Há mais de
+                        27 anos no
                         mercado, a
                         Vip Transporte carrega uma bagagem com muita experiência, prestando um serviço de excelência aos
                         nossos clientes.
@@ -89,64 +91,48 @@
                 </div>
             </section>
         </div>
-    </div> -->
-    <div class="container_fundo_empresa">
-        <div class="empresa_fundo">
-            <div class="div_empresa container_empresa" id="escola">
-                <section class="container_empresa">
-                    <img class="imagem_empresa" src="assets/img/ANDERSON11.jpg" alt="vans escolares">
-
-                </section>
-            </div>
-        </div>
-        <div class="empresa_testo_cantainer">
-            <div class="empresa_content">
-                <h2 class="empresa_title">Nossa empresa</h2>
-                <p>Transporte escolar é a especialidade da Vip Transporte Escolar ltda. Há mais de 27 anos no
-                    mercado, a
-                    Vip Transporte carrega uma bagagem com muita experiência, prestando um serviço de excelência aos
-                    nossos clientes.
-                    A nossa proposta sempre foi ser referência no transporte de passageiros, prestando nossos
-                    serviços
-                    com segurança,
-                    pontualidade, conforto e respeito. Atuamos também no transporte para festas, casamentos, shows,
-                    aeroportos,
-                    transporte de funcionários, transporte escolar e eventos em geral. Solicite agora mesmo um
-                    orçamento
-                    e
-                    teremos o maior prazer em atender a sua demanda. </p>
-            </div>
-        </div>
     </div>
     <!--fim empresa-->
     <!--inicio colegios-->
     <div class="div_colegios">
         <section class="container_colegios">
-            <img src="assets/img/loyola_bernoulli.png" alt="colégios loyola e bernoulli">
-            <div class="empresa_content">
-                <h2 class="colégios_title">Colégios e bairros que atendemos</h2>
-                <p>Colégios Loyola e Bernoulli Cidade Jardim</p>
-                <p>Serra, Mangabeiras, Anchieta, Cruzeiro, Sion, Santo Antônio e São Bento</p>
+            <div class="colegios_content">
+                <!-- <h2 class="colégios_title">Colégios e bairros que atendemos</h2> -->
+                <ul class="ul_colegios">
+                    <h3 class="h3_colegios">Colégios</h3>
+                    <li>Loyola</li>
+                    <li>Bernoulli Cidade Jardim</li>
+                </ul>
+                <ul class="ul_colegios" id="colegios">
+                    <h3 class="h3_colegios">Bairros</h3>
+                    <li>Serra</li>
+                    <li>Mangabeiras</li>
+                    <li>Anchieta</li>
+                    <li>Cruzeiro</li>
+                    <li>Santo Antônio</li>
+                    <li>São Bento</li>
+                </ul>
             </div>
+            <img class="imagem_colegios" src="assets/img/loyola_bernoulli.png" alt="colégios loyola e bernoulli">
         </section>
     </div>
     <!--fim colegios-->
     <!--inicio mapa-->
-    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="contatos">
+    <div class="div_mapa" id="contatos">
         <section class="container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.7708630345674!2d-43.926647723983116!3d-19.93405843843651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699bffcc69f89%3A0xc863f6f91a518127!2sR.%20Des.%20Drumond%20-%20Serra%2C%20Belo%20Horizonte%20-%20MG%2C%2030220-030!5e0!3m2!1spt-BR!2sbr!4v1724270779692!5m2!1spt-BR!2sbr"
                 width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <address class="contatos_address">Av. da Liberdade, 1001<br>
-                Tel.: +351 21 123 456<br>
-                E-mail: contato@aprenser.com
-            </address>
         </section>
+        <address class="contatos_address">Av. Desembargador Drumond, 72<br>
+            Tel.: (31) 99979-2529<br>
+            E-mail: contato@aprenser.com
+        </address>
     </div>
     <!--fim mapa-->
     <!--inicio form-->
-    <section class="formulario_contato" id="contato">
+    <!-- <section class="formulario_contato" id="contato">
         <div class="container">
             <div class="formulario-card">
                 <div class="formulario-card">
@@ -163,14 +149,49 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--fim form-->
-    <!--inicio footer-->
-    <div class="wrapperContainer wrapperContainer-dark">
-        <footer class="footer">Desenvolvido por <a href="https://webaqui.com.br" target="_blank">webaqui</a> </footer>
+    </section> -->
+
+    <div class="form_container" id="contato">
+        <h2>Entre em Contato</h2>
+        <form class="contactForm" id="contactForm">
+            <div class="form-group">
+                <!-- <label for="name">Nome:</label> -->
+                <input type="text" id="name" name="name" required placeholder="Nome">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <input type="number" id="Telefone" name="Telefone" placeholder="Telefone">
+                <!-- <span class="error-message" id="nameError"></span> -->
+            </div>
+            <div class="form-group">
+                <!-- <label for="email">E-mail:</label> -->
+                <input type="email" id="email" name="email" required placeholder="E-mail">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <!-- <label for="message">Mensagem:</label> -->
+                <textarea id="message" name="message" rows="4" required placeholder="Deixe uma mensagem."></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
-    <!--fim footer-->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
+<!--fim form-->
+<!--inicio footer-->
+<div class="div_footer">
+    <footer class="footer">Desenvolvido por 
+        <a href="https://webaqui.com.br" target="_blank">www.webaqui.com.br</a> 
+        <p>Vip Transporte Escolar © 2024 Todos os Direitos Reservados</p>
+    </footer>
+</div>
+<!--fim footer-->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 

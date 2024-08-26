@@ -175,33 +175,179 @@ body{
 
 /*Empresa*/
 
-.container_fundo_empresa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .empresa_fundo {
+    display: flex;
     background-color: var(--primary-color);
-    padding: 30px;
-    width: 900px;
+    /* height: 600px; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .container_empresa {
     max-width: 127.6rem;
-    margin: auto;
     display: flex;
+    gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    color: var(--black);
+    font-weight: 600;
 }
 
 .empresa_content {
-    background-color: white;
-    padding: 70px;
+    padding: 40px;
+}
+
+
+/* Colegios */
+
+.div_colegios {
+    background-color: var(--primary-color);
+    padding: 0 50px;
+    padding-bottom: 50px;
+}
+
+.container_colegios {
+    max-width: 127.6rem;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.colegios_content {
+    display: flex;
+    gap: 40px;
+}
+
+.ul_colegios li {
+    font-size: 14px;
+}
+
+.imagem_colegios {
+    width: 583px;
+    height: 450px;
+}
+
+
+/*Mapa*/
+
+.div_mapa {
+    background-color: var(--clear);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.contatos_address {
+    font-size: 16px;
+    padding: 50px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+
+/*Formulário*/
+
+.form_container {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 80px;
+}
+
+input {
+background-color: var(--primary-color);
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.contactForm {
+    width: 100%;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.form-container {
+    /* background-color: #fff; */
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* width: 50%; */
+}
+
+h2 {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    /* width: 100%; */
+    font-size: 1.6rem;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: var(--primary-color);
     color: black;
 }
 
-.imagem_empresa {
-    width: 550px;
-    height: 400px;
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.6rem;
+    display: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    /* width: 100%; */
+    width: 520px;
+}
+
+button:hover {
+    background-color: var(--clear);
+}
+
+/* footer */
+
+.div_footer {
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--clear);
+    padding: 20px;
+}
+
+.footer a {
+    color: var(--clear);
 }

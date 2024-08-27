@@ -108,8 +108,8 @@ body{
 /* hero_baner */
 
 .hero_baner{
-    height: 65vh;
-    padding: 40px 20px;
+    height: 75vh;
+    padding: 20px 20px;
     background: url(../img/Sem\ nome\ \(Website\)\ \(5\).png);
     background-size: cover;
     background-position: center center;
@@ -118,7 +118,7 @@ body{
 /* Qualidades */
 
 .qualidades {
-    height: 600px;
+    /* height: 600px; */
     text-align: center;
     align-items: center;
     padding: 30px;
@@ -134,13 +134,14 @@ body{
 
 .qualidades_cantainer {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
     justify-content: center;
     gap: 30px;
 }
 
 .article_card {
-    display: flex;
+    /* display: flex; */
     background-color: var(--primary-color);
     width:230px;
     height: 300px;
@@ -177,21 +178,31 @@ body{
 
 
 .empresa_fundo {
-    display: flex;
     background-color: var(--primary-color);
-    /* height: 600px; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     padding-top: 50px;
 }
 
-.container_empresa {
+/* .container_empresa {
     max-width: 127.6rem;
     display: flex;
     gap: 30px;
     align-items: center;
     color: var(--black);
     font-weight: 600;
+    margin: auto;
+} */
+
+.container_empresa {
+    max-width: 127.6rem;
+    /* padding: 0 40px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    color: var(--black);
+    font-weight: 600;
+    margin: auto;
 }
 
 .empresa_content {
@@ -224,7 +235,7 @@ body{
 }
 
 .ul_colegios li {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .imagem_colegios {
@@ -300,7 +311,7 @@ label {
 }
 
 input[type="text"],
-input[type="number"],
+input[type="tel"],
 input[type="email"],
 textarea {
     /* width: 100%; */
@@ -339,6 +350,28 @@ button:hover {
     background-color: var(--clear);
 }
 
+
+/* whatsapp */
+
+.whatsapp_link {
+ position: fixed;
+ width: 60px;
+ height: 60px;
+ bottom: 40px;
+ right: 40px;
+ background-color: #25d366;
+ color: white;
+ border-radius: 50px;
+ text-align: center;
+ font-size: 30px;
+ box-shadow: 1px 1px 2px #888;
+ z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
 /* footer */
 
 .div_footer {
@@ -350,4 +383,97 @@ button:hover {
 
 .footer a {
     color: var(--clear);
+}
+
+
+/*Tablet*/
+
+@media screen and (max-width: 1190px){
+    /*Menu*/
+    .nav_menu{
+        display: none;
+    }
+
+    /* hero_baner */
+    .hero_baner {
+        /* background-position: center left; */
+        height: 26vh;
+        padding: 0px 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    /*Qualidades*/
+    
+    .qualidades {
+        margin-bottom: 12px;
+    }
+    
+    .section_title {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .qualidades_cantainer {
+        flex-direction: column;
+        /* padding-bottom: -10px; */
+    }
+
+    .article_card {
+        flex-direction: column;
+    }
+
+    /*Empresa*/
+    .container_empresa {
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: -60px;
+    }
+
+    .empresa_title {
+        margin-top: -20px;
+        margin-bottom: -3px;
+    }
+
+    .imagem_empresa {
+        width: 100%;
+    }
+
+    /*Colegios*/
+    .container_colegios {
+        flex-direction: column;
+    }
+
+    .colegios_content {
+        flex-direction: none;
+        gap: 0;
+        margin-bottom: 20px;
+    }
+
+    .imagem_colegios {
+        width: 168%;
+    }
+
+    /* Mapa */
+
+    .div_mapa {
+        padding-bottom: 0px;
+    }
+
+    /*Form*/
+
+    h2 {
+        margin-top: -50px;
+    }
+
+    button {
+        width: 109%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
 }

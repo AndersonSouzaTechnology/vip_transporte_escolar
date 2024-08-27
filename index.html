@@ -4,13 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/Título (3) (1).png" type="image/png"> <!--"favicon" icine da aba do navegador-->
+    <link rel="shortcut icon" href="assets/img/Título (3) (1).png" type="image/png">
+    <!--"favicon" icine da aba do navegador-->
     <title>Vip Transporte Escolar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
+        integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
+    <a class="whatsapp_link" href="https://web.whatsapp.com/send?phone=5531999792529" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
     <!--inicio do header_menu-->
     <div class="header_menu" id="inicio">
         <header class="container">
@@ -132,40 +141,22 @@
     </div>
     <!--fim mapa-->
     <!--inicio form-->
-    <!-- <section class="formulario_contato" id="contato">
-        <div class="container">
-            <div class="formulario-card">
-                <div class="formulario-card">
-                    <h3 class="formulario-title">Entre em contato</h3>
-                    <p class="formulario-text">Fique à vontade para entrar em contato para obter mais informações</p>
-                    <form action="assets/php/email.php" method="post" class="formulario-form">
-                        <input type="text" name="text" id="" placeholder="Seu nome">
-                        <input type="tel" name="tel" id="" placeholder="DDD+Telefone">
-                        <input type="email" name="email" id="" placeholder="Seu melhor e-mail">
-                        <label for="mensagem">Deixe uma mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" cols="33"></textarea>
-                        <button type="submit" class="btn btn-sete">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <div class="form_container" id="contato">
         <h2>Entre em Contato</h2>
-        <form class="contactForm" id="contactForm">
+        <form action="assets/php/email.php" method="post" class="contactForm" id="contactForm">
             <div class="form-group">
                 <!-- <label for="name">Nome:</label> -->
-                <input type="text" id="name" name="name" required placeholder="Nome">
+                <input type="text" name="text" id="" required placeholder="Seu nome">
                 <span class="error-message" id="nameError"></span>
             </div>
             <div class="form-group">
-                <input type="number" id="Telefone" name="Telefone" placeholder="Telefone">
+                <input type="tel" name="tel" id="" placeholder="DDD+Telefone">
                 <!-- <span class="error-message" id="nameError"></span> -->
             </div>
             <div class="form-group">
                 <!-- <label for="email">E-mail:</label> -->
-                <input type="email" id="email" name="email" required placeholder="E-mail">
+                <input type="email" name="email" id="" required placeholder="ESeu melhor e-mail">
                 <span class="error-message" id="emailError"></span>
             </div>
             <div class="form-group">
@@ -177,21 +168,24 @@
         </form>
     </div>
     <script src="scripts.js"></script>
-</body>
+    <!--fim form-->
 
-</html>
+    <!--inicio whatsapp-->
+    <!-- <a class="whatsapp_link" href="https://web.whatsapp.com/send?phone=5531999792529" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a> -->
+    <!--fim whatsapp-->
 
-
-<!--fim form-->
-<!--inicio footer-->
-<div class="div_footer">
-    <footer class="footer">Desenvolvido por 
-        <a href="https://webaqui.com.br" target="_blank">www.webaqui.com.br</a> 
-        <p>Vip Transporte Escolar © 2024 Todos os Direitos Reservados</p>
-    </footer>
-</div>
-<!--fim footer-->
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--inicio footer-->
+    <div class="div_footer">
+        <footer class="footer">Desenvolvido por
+            <a href="https://webaqui.com.br" target="_blank">www.webaqui.com.br</a>
+            <p>Vip Transporte Escolar © 2024 Todos os Direitos Reservados</p>
+        </footer>
+    </div>
+    <!--fim footer-->
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 

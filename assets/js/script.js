@@ -68,3 +68,20 @@ window.addEventListener("scroll", function(){
         goTopBtn.classList.remove("active");
     }
 });
+
+
+// Politica de privacidade 
+
+let msgCookies = document.getElementById('cookies_msg');
+
+function aceito() {
+    localStorage.lgpd = "sin";
+    msgCookies.classList.remove('mostrar');
+}
+
+if(localStorage.lgpd == 'sim') {
+    msgCookies.classList.remove('mostrar');
+}else{
+    msgCookies.classList.add('mostrar');
+
+}

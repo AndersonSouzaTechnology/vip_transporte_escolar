@@ -340,7 +340,7 @@ textarea {
     display: none;
 }
 
-button {
+.button_form {
     background-color: var(--primary-color);
     border: 1px solid black;
     color: black;
@@ -352,8 +352,34 @@ button {
     width: 520px;
 }
 
-button:hover {
+.button_form:hover {
     background-color: var(--clear);
+}
+
+/* Botao retorno ao topo */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.botao_retorno_topo {
+    display: flex;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: var(--clear);
+    border: solid 1px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    right: 50px;
+    bottom: 130px;
+    transition: all ease 400ms;
+}
+
+.botao_retorno_topo:hover {
+    background-color: var(--dark);
+    color: var(--clear);
 }
 
 
@@ -395,6 +421,60 @@ button:hover {
 }
 
 
+/* politica de privacidade */
+
+.cookies_msg {
+    width: 500px;
+    background-color: var(--clear);
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    display: none;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.cookies_msg.mostrar {
+    display: block;
+}
+
+.cookies_msg .cookies_txt {
+    /* display: flex; */
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.cookies_msg .cookies_btn {
+    margin-left: 20px;
+}
+
+.cookies_msg .cookies_btn .button_privacidade {
+    background-color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cookies_msg .button_privacidade:hover {
+    transform: scale(0.9);
+}
+
+ .link_btn {
+    display: flex;
+    justify-content: center;
+}
+
+ .link_btn a, .a_npp {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 18px;
+}
+
 /*Tablet*/
 
 @media screen and (max-width: 1190px) {
@@ -407,7 +487,7 @@ button:hover {
     /* hero_baner */
     .hero_baner {
         /* background-position: center left; */
-        height: 26vh;
+        height: 45vh;
         padding: 0px 20px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -420,7 +500,8 @@ button:hover {
     }
 
     .section_title {
-        padding-top: 50px;
+        font-size: 35px;
+        padding-top: 20px;
         padding-bottom: 0px;
     }
 
@@ -476,7 +557,7 @@ button:hover {
         margin-top: -50px;
     }
 
-    button {
+    .button_form {
         width: 109%;
     }
 
@@ -486,4 +567,12 @@ button:hover {
     textarea {
         width: 100%;
     }
+
+    /* politica de privacidade */
+
+    .cookies_msg {
+        width: 90%;
+    }
+
 }
+

@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home. A VIP TRANSPORTE ESCOLARE LTDA é uma empresa baseada na cidade de Belo Horizonte/MG, 
+    preparada e qualificada no mercado para a prestação de serviços de transporte escolar e fretamento de vans para deslocamento local. 
+    Atua há mais de 27 anos no mercado." />
+    <meta name="keywords"
+        content="TRANSPORTE ESCOLAR EM BELO HORIZONTE, transporte escolar para o colégio loyola, transporte escolar para o colégio Bernoulli, transporte escolar para o colégio São Paulo, transporte colegio loyola, transporte loyola,   transporte Bernoulli, transporte colégio são paulo" />
     <link rel="shortcut icon" href="assets/img/Título (3) (1).png" type="image/png">
     <!--"favicon" icine da aba do navegador-->
     <title>Vip Transporte Escolar</title>
@@ -16,7 +21,7 @@
 
 <body>
     <!--Whatsapp-->
-    <a class="whatsapp_link" href="https://web.whatsapp.com/send?phone=5531999792529" target="_blank">
+    <a class="whatsapp_link" href="https://web.whatsapp.com/send?phone=5531999792529" target="_blank" title="Whatsapp">
         <i class="fa fa-whatsapp"></i>
     </a>
 
@@ -28,7 +33,7 @@
             </div>
             <nav class="nav_menu">
                 <ul>
-                    <li class="li_menu"><a class="link_mnu" href="index.html">Início</a></li>
+                    <li class="li_menu"><a class="link_mnu" href="#">Início</a></li>
                     <li class="li_menu"><a class="link_mnu" href="#empresa">Empresa</a></li>
                     <li class="li_menu"><a class="link_mnu" href="#colegios">Colégios e Bairros</a></li>
                     <li class="li_menu"><a class="link_mnu" href="#contato">Contato</a></li>
@@ -162,10 +167,9 @@
                 <textarea id="message" name="message" rows="4" required placeholder="Deixe uma mensagem."></textarea>
                 <span class="error-message" id="messageError"></span>
             </div>
-            <button type="submit">Enviar</button>
+            <button class="button_form" type="submit">Enviar</button>
         </form>
     </div>
-    <script src="scripts.js"></script>
     <!--fim form-->
 
 
@@ -178,6 +182,32 @@
     </div>
     <!--fim footer-->
 
+    <!--botao retorno ao topo-->
+    <a class="botao_retorno_topo" href="#" title="Retorno ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+        </svg>
+    </a>
+
+    <!--politica de privacidade-->
+    <div class="cookies_msg" id="cookies_msg">
+        <div class="cookies_txt">
+            <p>
+                Utilizamos cookies para oferecer melhor experiência, melhorar o desempenho, analisar como você interage
+                em nosso site e personalizar conteúdo. 
+                <a class="a_npp" href="file:///C:/Users/Anderson/Desktop/Projetos/vip_transporte_escolar/assets/politica_privacidade.html#" target="_blank">Nossa politica de privacidade</a>
+            </p>
+            
+            <div class="link_btn">
+                <a href="#" onclick="aceito()">Recusar</a>
+                <div class="cookies_btn">
+                    <button class="button_privacidade" onclick="aceito()">Aceito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="scripts.js"></script> -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="assets/js/script.js"></script>
 

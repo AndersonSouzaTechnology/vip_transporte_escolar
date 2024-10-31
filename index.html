@@ -12,41 +12,93 @@
     <link rel="shortcut icon" href="assets/img/Título (3) (1).png" type="image/png">
     <!--"favicon" icine da aba do navegador-->
     <title>Vip Transporte Escolar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
-        integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+        onload="this.onload=null;this.rel=apos;stylesheet&apos;" rel="preload" />
+    <noscript>
+        <link href="link do css" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!--Whatsapp-->
+    <!--WHATSAPP-->
     <a class="whatsapp_link" href="https://web.whatsapp.com/send?phone=5531999792529" target="_blank" title="Whatsapp">
-        <i class="fa fa-whatsapp"></i>
+        <ion-icon name="logo-whatsapp" class="fa-whatsapp"></ion-icon>
     </a>
+    <!--FIM WHATSAPP-->
 
-    <!--inicio do header_menu-->
-    <div class="header_menu">
-        <header class="container">
-            <div class="menu_logo">
-                <a href=""><img class="logo" src="assets/img/Título (3) (1).png" alt="logo vip transporte"></a>
-            </div>
-            <nav class="nav_menu">
-                <ul>
-                    <li class="li_menu"><a class="link_mnu" href="#">Início</a></li>
-                    <li class="li_menu"><a class="link_mnu" href="#empresa">Empresa</a></li>
-                    <li class="li_menu"><a class="link_mnu" href="#colegios">Colégios e Bairros</a></li>
-                    <li class="li_menu"><a class="link_mnu" href="#contato">Contato</a></li>
+    <!--HEADER-->
+    <header>
+        <div class="div-header">
+            <a href="https://www.viptransporte.com.br/"><img src="assets/img/Título (3) (1).png" alt=" vip transporte"
+                    class="logo-menu"></a>
+
+            <nav class="nav-bar">
+                <ul class="ul_menu">
+                    <li><a href="https://www.viptransporte.com.br/">Início</a></li>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#colegios">Colégios e Bairros</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-        </header>
-    </div>
-    <!--fim do header_menu-->
-    <!--inicio do hero_baner-->
+
+            <div class="menu-redes-sociais">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" aria-label="instagram da DTR" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram" class="instagram-icone"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="página home da DTR" class="social-link" target="_blank">
+                            <ion-icon name="logo-facebook" class="facebook-icone"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#contato" aria-label="Agendar Reunião"><button class="button-menu">Orçamento</button></a>
+
+            <!-- MENU MOBILE -->
+            <div id="btn-menu" class="btn-abrir-menu"><!--Icone do menu hambueger-->
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <div id="menu-mobile" class="menu-mobile"><!--Menu mobile-->
+
+                <div class="btn-fechar">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+
+                <nav class="nav-mobile">
+                    <a href="https://www.viptransporte.com.br/"><img src="assets/img/Título (3) (1).png"
+                            alt="logo vip transporte" class="logo-menu-mobile"></a>
+                    <ul>
+                        <li><a href="https://www.viptransporte.com.br/">Início</a></li>
+                        <li><a href="#empresa">Empresa</a></li>
+                        <li><a href="#colegios">Colégios e Bairros</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div id="overlay-menu" class="overlay-menu"></div>
+            <!-- FIM MENU MOBILE -->
+
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <!--HERO BANNER-->
     <div class="hero_baner">
     </div>
-    <!--fim do hero_baner-->
-    <!--inicio do qualidades-->
+    <!--FIM HERO BANNER-->
+
+    <!--QUALIDADES-->
     <div class="qualidades">
         <section class="section_diferenciais">
             <h2 class="section_title">Conheça nossos diferenciais</h2>
@@ -60,7 +112,7 @@
                 <article class="article_card">
                     <div>
                         <img class="icone_experiencia" src="assets/img/experiencia.png" alt="">
-                        <h3>27 anos de mercado</h3>
+                        <h3>28 anos de mercado</h3>
                     </div>
                 </article>
                 <article class="article_card">
@@ -78,34 +130,34 @@
             </div>
         </section>
     </div>
-    <!--fim do qualidades-->
-    <!--inicio empresa-->
-    <div class="empresa_fundo">
-        <div class="div_empresa" id="empresa">
-            <section class="container_empresa">
-                <img class="imagem_empresa" src="assets/img/ANDERSON11.jpg" alt="vans escolares">
-                <div class="empresa_content">
-                    <h2 class="empresa_title">Nossa empresa</h2>
-                    <p class="empresa_p">Transporte escolar é a especialidade da Vip Transporte Escolar ltda. Há mais de
-                        27 anos no
-                        mercado, a
-                        Vip Transporte carrega uma bagagem com muita experiência, prestando um serviço de excelência aos
-                        nossos clientes.
-                        A nossa proposta sempre foi ser referência no transporte de passageiros, prestando nossos
-                        serviços
-                        com segurança,
-                        pontualidade, conforto e respeito. Atuamos também no transporte para festas, casamentos, shows,
-                        aeroportos,
-                        transporte de funcionários, transporte escolar e eventos em geral. Solicite agora mesmo um
-                        orçamento
-                        e
-                        teremos o maior prazer em atender a sua demanda. </p>
-                </div>
-            </section>
-        </div>
+    <!--FIM QUALIDADES-->
+
+    <!--EMPRESA-->
+    <div class="empresa_fundo" id="empresa">
+        <section class="container_empresa">
+            <img class="imagem_empresa" src="assets/img/ANDERSON11.jpg" alt="vans escolares">
+            <div class="empresa_content">
+                <h2 class="empresa_title">Nossa empresa</h2>
+                <p class="empresa_p">Transporte escolar é a especialidade da Vip Transporte Escolar ltda. Há mais de
+                    27 anos no
+                    mercado, a
+                    Vip Transporte carrega uma bagagem com muita experiência, prestando um serviço de excelência aos
+                    nossos clientes.
+                    A nossa proposta sempre foi ser referência no transporte de passageiros, prestando nossos
+                    serviços
+                    com segurança,
+                    pontualidade, conforto e respeito. Atuamos também no transporte para festas, casamentos, shows,
+                    aeroportos,
+                    transporte de funcionários, transporte escolar e eventos em geral. Solicite agora mesmo um
+                    orçamento
+                    e
+                    teremos o maior prazer em atender a sua demanda. </p>
+            </div>
+        </section>
     </div>
-    <!--fim empresa-->
-    <!--inicio colegios-->
+    <!--FIM EMPRESA-->
+
+    <!--COLÉGIO-->
     <div class="div_colegios">
         <section class="container_colegios">
             <div class="colegios_content">
@@ -113,11 +165,15 @@
                 <ul class="ul_colegios">
                     <h3 class="h3_colegios">Colégios</h3>
                     <li>Loyola</li>
+                    <li>Colégio São Paulo</li>
+                    <li>Colégio Savassi</li>
                     <li>Bernoulli Cidade Jardim</li>
                 </ul>
                 <ul class="ul_colegios" id="colegios">
                     <h3 class="h3_colegios">Bairros</h3>
+                    <li>Funcionários</li>
                     <li>Serra</li>
+                    <li>Sion</li>
                     <li>Mangabeiras</li>
                     <li>Anchieta</li>
                     <li>Cruzeiro</li>
@@ -125,11 +181,41 @@
                     <li>São Bento</li>
                 </ul>
             </div>
-            <img class="imagem_colegios" src="assets/img/loyola_bernoulli.png" alt="colégios loyola e bernoulli">
+            <img class="imagem_colegios" src="assets/img/Design sem nome (52)_11zon (1).jpg"
+                alt="colégios loyola e bernoulli">
         </section>
     </div>
-    <!--fim colegios-->
-    <!--inicio mapa-->
+    <!--FIM COLÉGIO-->
+
+    <!--BHTRANS-->
+    <div class="div_bhtrans">
+        <section class="container_bhtrans">
+            <img class="imagem_bhtrans" src="assets/img/BHTRANS.png" alt="bhtrans">
+            <div class="bhtrans_content">
+                <h2 class="bhtrans_title">Somos credenciados na BHTRANS</h2>
+                <p class="bhtrans_p">Tanto nossa van quanto o motorista, são credenciados na BHTRANS para executar o
+                    serveço de transporte escolar no municipio de Belo Horizonte, os condutores de vans escolares, devem
+                    ser aprovados em cursos profissionalizantes, possuir CNH na categoria "D", e não ter antecedentes
+                    criminais. Os veículos devem ser aprovados em vistoria veicular a cada seis meses.</p>
+            </div>
+        </section>
+    </div>
+    <!--FIM BHTRANS-->
+
+    <!--VAN-->
+    <div class="div_van">
+        <section class="container_van">
+            <div class="van_content">
+                <h2 class="van_title">Nosso veículo</h2>
+                <p class="van_p">Nosso veículo é uma VAN Peugeot Boxer, veículo com capacidade para até 16 passageiros incluindo o motorista, van com ar condicionado. Veículo com a vistoria e a documentação conforme as exigências dos órgãos responsáveis, BHTRANS e DETRAN MG.</p>
+            </div>
+            <img class="imagem_van" src="assets/img/20160803_114251_11zon.jpg" alt="van escolar">
+        </section>
+    </div>
+    <!--FIM VAN-->
+
+
+    <!--MAPA-->
     <div class="div_mapa" id="contatos">
         <section class="container">
             <iframe
@@ -142,11 +228,11 @@
             E-mail: fretavip@gmail.com
         </address>
     </div>
-    <!--fim mapa-->
-    <!--inicio form-->
+    <!--FIM MAPA-->
 
+    <!--FORM-->
     <div class="form_container" id="contato">
-        <h2>Entre em Contato</h2>
+        <h2 class="form_h2">Entre em Contato</h2>
         <form action="assets/php/email.php" method="post" class="contactForm" id="contactForm">
             <div class="form-group">
                 <!-- <label for="name">Nome:</label> -->
@@ -170,45 +256,40 @@
             <button class="button_form" type="submit">Enviar</button>
         </form>
     </div>
-    <!--fim form-->
+    <!--FIM FORM-->
 
 
-    <!--inicio footer-->
+    <!--FOOTER-->
     <div class="div_footer">
         <footer class="footer">Desenvolvido por
             <a href="https://webaqui.com.br" target="_blank">www.webaqui.com.br</a>
             <p>Vip Transporte Escolar © 2024 Todos os Direitos Reservados</p>
         </footer>
     </div>
-    <!--fim footer-->
+    <!--FIM FOOTER-->
 
-    <!--botao retorno ao topo-->
+    <!--BOTÃO RETORNO AO TOPO-->
     <a class="botao_retorno_topo" href="#" title="Retorno ao topo">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
             <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
         </svg>
     </a>
+    <!--FIM BOTÃO RETORNO AO TOPO-->
 
-    <!--politica de privacidade-->
-    <div class="cookies_msg" id="cookies_msg">
-        <div class="cookies_txt">
-            <p>
-                Utilizamos cookies para oferecer melhor experiência, melhorar o desempenho, analisar como você interage
-                em nosso site e personalizar conteúdo. 
-                <a class="a_npp" href="file:///C:/Users/Anderson/Desktop/Projetos/vip_transporte_escolar/assets/politica_privacidade.html#" target="_blank">Nossa politica de privacidade</a>
-            </p>
-            
-            <div class="link_btn">
-                <a href="#" onclick="aceito()">Recusar</a>
-                <div class="cookies_btn">
-                    <button class="button_privacidade" onclick="aceito()">Aceito</button>
-                </div>
-            </div>
+    <!--POLÍTICA DE PRIVACIDADE-->
+    <div id="lgpd-popup" class="popup-lgpd">
+        <div class="popup-content">
+            <h2 class="lgpd">Política de Privacidade</h2>
+            <p>Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com
+                nossa <a href="https://www.viptransporte.com.br/politica_privacidade">Política de Privacidade</a>.</p>
+            <button id="accept-btn" class="accept-btn">Aceitar</button>
+            <button id="decline-btn" class="decline-btn">Recusar</button>
         </div>
     </div>
+    <!--FIM POLÍTICA DE PRIVACIDADE-->
 
-    <!-- <script src="scripts.js"></script> -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

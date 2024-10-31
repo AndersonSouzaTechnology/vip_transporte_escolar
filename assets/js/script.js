@@ -1,54 +1,3 @@
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Impede o envio padrão do formulário
-    
-//     // Limpar mensagens de erro
-//     document.getElementById('nameError').style.display = 'none';
-//     document.getElementById('emailError').style.display = 'none';
-//     document.getElementById('messageError').style.display = 'none';
-
-//     // Obter valores dos campos
-//     var name = document.getElementById('name').value.trim();
-//     var email = document.getElementById('email').value.trim();
-//     var message = document.getElementById('message').value.trim();
-
-//     var isValid = true;
-
-//     // Validar nome
-//     if (name === '') {
-//         document.getElementById('nameError').innerText = 'Por favor, preencha seu nome.';
-//         document.getElementById('nameError').style.display = 'block';
-//         isValid = false;
-//     }
-
-//     // Validar e-mail
-//     if (email === '') {
-//         document.getElementById('emailError').innerText = 'Por favor, preencha seu e-mail.';
-//         document.getElementById('emailError').style.display = 'block';
-//         isValid = false;
-//     } else if (!validateEmail(email)) {
-//         document.getElementById('emailError').innerText = 'Por favor, insira um e-mail válido.';
-//         document.getElementById('emailError').style.display = 'block';
-//         isValid = false;
-//     }
-
-//     // Validar mensagem
-//     if (message === '') {
-//         document.getElementById('messageError').innerText = 'Por favor, escreva sua mensagem.';
-//         document.getElementById('messageError').style.display = 'block';
-//         isValid = false;
-//     }
-
-//     // Se todos os campos forem válidos
-//     if (isValid) {
-//         alert('Formulário enviado com sucesso!');
-//         // Aqui você pode adicionar o código para enviar o formulário, se necessário.
-//     }
-// });
-
-// function validateEmail(email) {
-//     var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return re.test(email);
-// }
 
 
 // SCROLL MENU
@@ -72,16 +21,57 @@ window.addEventListener("scroll", function(){
 
 // Politica de privacidade 
 
-let msgCookies = document.getElementById('cookies_msg');
+// let msgCookies = document.getElementById('cookies_msg');
 
-function aceito() {
-    localStorage.lgpd = "sin";
-    msgCookies.classList.remove('mostrar');
-}
+// function aceito() {
+//     localStorage.lgpd = "sin";
+//     msgCookies.classList.remove('mostrar');
+// }
 
-if(localStorage.lgpd == 'sim') {
-    msgCookies.classList.remove('mostrar');
-}else{
-    msgCookies.classList.add('mostrar');
+// if(localStorage.lgpd == 'sim') {
+//     msgCookies.classList.remove('mostrar');
+// }else{
+//     msgCookies.classList.add('mostrar');
 
-}
+// }
+
+
+//MENU RESPONSIVO
+const btnMenu = document.getElementById('btn-menu');
+// MENU MOBILE
+const menu = document.getElementById('menu-mobile');
+const overlay = document.getElementById('overlay-menu');
+
+btnMenu.addEventListener('click', () => menu.classList.add('abrir-menu'));
+menu.addEventListener('click', () => menu.classList.remove('abrir-menu'));
+overlay.addEventListener('click', () => menu.classList.remove('abrir-menu'));
+
+// LGPD
+// Função para verificar se o usuário já aceitou ou recusou a política de privacidade
+document.addEventListener('DOMContentLoaded', function () {
+  const popup = document.getElementById('lgpd-popup');
+  const acceptBtn = document.getElementById('accept-btn');
+  const declineBtn = document.getElementById('decline-btn');
+
+  // Verifica se o usuário já aceitou ou recusou cookies
+  if (!localStorage.getItem('lgpdAccepted')) {
+      popup.style.display = 'block';
+  }
+
+  // Quando o usuário clica em "Aceitar"
+  acceptBtn.addEventListener('click', function () {
+      localStorage.setItem('lgpdAccepted', 'true');
+      popup.style.display = 'none';
+  });
+
+  // Quando o usuário clica em "Recusar"
+  declineBtn.addEventListener('click', function () {
+      localStorage.setItem('lgpdAccepted', 'false');
+      popup.style.display = 'none';
+  });
+});
+
+
+
+
+

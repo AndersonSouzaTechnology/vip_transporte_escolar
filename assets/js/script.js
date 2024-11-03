@@ -18,24 +18,6 @@ window.addEventListener("scroll", function(){
     }
 });
 
-
-// Politica de privacidade 
-
-// let msgCookies = document.getElementById('cookies_msg');
-
-// function aceito() {
-//     localStorage.lgpd = "sin";
-//     msgCookies.classList.remove('mostrar');
-// }
-
-// if(localStorage.lgpd == 'sim') {
-//     msgCookies.classList.remove('mostrar');
-// }else{
-//     msgCookies.classList.add('mostrar');
-
-// }
-
-
 //MENU RESPONSIVO
 const btnMenu = document.getElementById('btn-menu');
 // MENU MOBILE

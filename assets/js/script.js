@@ -54,6 +54,34 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// Mantem as mensagens de Sucesso ou Erro na mesma página do formulário
+document.getElementById("contactForm").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Impede o redirecionamento padrão da página
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+        });
+
+        const result = await response.json();
+
+        if (result.status === "success") {
+            alert("Sucesso: " + result.message);
+            form.reset();
+        } else {
+            alert("Erro: " + result.message);
+        }
+    } catch (error) {
+        alert("Erro ao enviar a mensagem. Por favor, tente novamente.");
+    }
+});
+
+
+
 
 
 

@@ -235,31 +235,31 @@
         
     </div>
     <!--FIM MAPA-->
-
-    <!--FORM-->
-    <div class="form_container" id="contato">
+    
+        <!--FORM-->
+        <div class="form_container" id="contato">
         <h2 class="form_h2">Entre em Contato</h2>
-        <form action="assets/php/email.php" method="post" class="contactForm" id="contactForm">
+        <form action="envio.php" method="post" class="contactForm" id="contactForm">
             <div class="form-group">
-                <!-- <label for="name">Nome:</label> -->
+                 <!--<label for="name">Nome:</label> -->
                 <input type="text" name="text" id="" required placeholder="Seu nome">
                 <span class="error-message" id="nameError"></span>
             </div>
             <div class="form-group">
                 <input type="tel" name="tel" id="" placeholder="DDD+Telefone">
-                <!-- <span class="error-message" id="nameError"></span> -->
+                 <span class="error-message" id="nameError"></span> 
             </div>
             <div class="form-group">
-                <!-- <label for="email">E-mail:</label> -->
+                 <!--<label for="email">E-mail:</label> -->
                 <input type="email" name="email" id="" required placeholder="Seu melhor e-mail">
                 <span class="error-message" id="emailError"></span>
             </div>
             <div class="form-group">
-                <!-- <label for="message">Mensagem:</label> -->
+                 <!--<label for="message">Mensagem:</label> -->
                 <textarea id="message" name="message" rows="4" required placeholder="Deixe uma mensagem."></textarea>
                 <span class="error-message" id="messageError"></span>
             </div>
-            <button class="button_form" type="submit">Enviar</button>
+            <button class="button_form" type="submit" name="enviar">Enviar</button>
         </form>
     </div>
     <!--FIM FORM-->

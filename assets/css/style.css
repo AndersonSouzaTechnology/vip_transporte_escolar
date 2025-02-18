@@ -489,7 +489,6 @@ header a .button-menu:hover {
 
 /* FORM */
 .form_container {
-    /* background-color: var(--primary-color); */
     text-align: center;
     padding: 80px;
 }
@@ -498,9 +497,8 @@ header a .button-menu:hover {
     background-color: var(--primary-color);
     font-family: var(--manrope);
     position: relative;
-    /* height: 1750px; */
-    /* max-width: 800px; */
     overflow: hidden;
+    z-index: 1; /* Certifica que o contêiner está acima de elementos sobrepostos */
 }
 
 .form_container::before {
@@ -514,7 +512,7 @@ header a .button-menu:hover {
     width: 100%;
     height: 100%;
     opacity: 0.04;
-    z-index: 1;
+    z-index: -1;  /*Colocar imagem de fundo abaixo do contêiner principal */
 }
 
 
@@ -592,7 +590,6 @@ textarea::placeholder,
 input::placeholder {
     color: var(--dark);
 }
-
 /* FIM FORM */
 
 
@@ -601,26 +598,29 @@ html {
     scroll-behavior: smooth;
 }
 
-.botao_retorno_topo {
+#btnTopo {
+    z-index: 10000;
     display: flex;
     position: fixed;
+    padding-top: 11px;
+    padding-right: 2px;
     width: 40px;
-    height: 40px;
+    height: 36px;
     background-color: var(--clear);
     border: solid 1px;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    right: 50px;
+    right: 45px;
     bottom: 130px;
     transition: all ease 400ms;
+    color: var(--dark);
 }
 
-.botao_retorno_topo:hover {
+#btnTopo:hover {
     background-color: var(--dark);
     color: var(--clear);
 }
-
 /* FIM BOTÃO RETORNO AO TOPO */
 
 

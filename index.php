@@ -23,6 +23,18 @@
 </head>
 
 <body>
+
+    <!--MENSAGEM ENVIO FORMULARIO-->
+    <?php
+    session_start();
+    if (isset($_SESSION['mensagem'])) {
+        echo '<div id="mensagem" style="padding: 20px; font-size: 20px; background-color: hsl(0, 0%, 100%); margin-bottom: 15px; margin-top: -3px; text-align: center;">'
+            . $_SESSION['mensagem'] .
+            '</div>';
+        unset($_SESSION['mensagem']);
+    }
+    ?>
+
     <!--WHATSAPP-->
     <a class="whatsapp_link" href="https://web.whatsapp.com/send?phone=5531999792529" target="_blank" title="Whatsapp">
         <ion-icon name="logo-whatsapp" class="fa-whatsapp"></ion-icon>
@@ -232,30 +244,30 @@
                 width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        
+
     </div>
     <!--FIM MAPA-->
-    
-        <!--FORM-->
-        <div class="form_container" id="contato">
+
+    <!--FORM-->
+    <div class="form_container" id="contato">
         <h2 class="form_h2">Entre em Contato</h2>
         <form action="envio.php" method="post" class="contactForm" id="contactForm">
             <div class="form-group">
-                 <!--<label for="name">Nome:</label> -->
+                <!--<label for="name">Nome:</label> -->
                 <input type="text" name="text" id="" required placeholder="Seu nome">
                 <span class="error-message" id="nameError"></span>
             </div>
             <div class="form-group">
                 <input type="tel" name="tel" id="" placeholder="DDD+Telefone">
-                 <span class="error-message" id="nameError"></span> 
+                <span class="error-message" id="nameError"></span>
             </div>
             <div class="form-group">
-                 <!--<label for="email">E-mail:</label> -->
+                <!--<label for="email">E-mail:</label> -->
                 <input type="email" name="email" id="" required placeholder="Seu melhor e-mail">
                 <span class="error-message" id="emailError"></span>
             </div>
             <div class="form-group">
-                 <!--<label for="message">Mensagem:</label> -->
+                <!--<label for="message">Mensagem:</label> -->
                 <textarea id="message" name="message" rows="4" required placeholder="Deixe uma mensagem."></textarea>
                 <span class="error-message" id="messageError"></span>
             </div>
@@ -275,8 +287,8 @@
     <!--FIM FOOTER-->
 
     <!--BOTÃO RETORNO AO TOPO-->
-    <a class="botao_retorno_topo" href="#" title="Retorno ao topo">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+    <a class="botao_retorno_topo" href="#" title="Retorno ao topo" id="btnTopo">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="44px" fill="currentColor">
             <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
         </svg>
     </a>
@@ -297,6 +309,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="deletemesage.js"></script>
 
 </body>
 
